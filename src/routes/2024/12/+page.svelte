@@ -252,6 +252,12 @@ MLLLLLLLLLKKKJJJJJRLHHHHHHEDDDDDDDDDDMM`
     });
 </script>
 
+<!-- TODO: Extract into custom component -->
+<svelte:head>
+    <title>Visualization 12/2024</title>
+    <meta name="description" content="Solution to 12th problem" />
+</svelte:head>
+
 <Header
     fileName="d12.rs"
     problemUrl="https://adventofcode.com/2024/day/12"
