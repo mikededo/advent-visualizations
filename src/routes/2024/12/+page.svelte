@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { AnimatedNumber, Header } from '$lib/components';
+    import { AnimatedNumber, Button, Header } from '$lib/components';
     import { sleep } from '$lib/utils';
     import { onMount } from 'svelte';
 
@@ -275,13 +275,12 @@ MLLLLLLLLLKKKJJJJJRLHHHHHHEDDDDDDDDDDMM`
     <h2>Visualization</h2>
     <div class="flex w-full items-center justify-between gap-8 font-semibold">
         <p>Cost: <AnimatedNumber value={cost} /></p>
-        <button
-            class="rounded-full bg-gray-700 px-4 py-2 text-sm font-semibold uppercase text-white transition-all hover:bg-gray-600 active:scale-[0.975] disabled:cursor-not-allowed disabled:bg-gray-500"
+        <Button
             disabled={running}
             onclick={onClick}
         >
             {running ? 'Running' : 'Solve'}
-        </button>
+        </Button>
     </div>
     <div id={CONTAINER_ID} class="mx-auto grid justify-center"></div>
 </section>

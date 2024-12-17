@@ -84,7 +84,16 @@ export default antfu(
       'style/indent': ['error', 4]
     }
   },
-  ...svelteTailwindcss.configs['flat/base']
+  ...svelteTailwindcss.configs['flat/base'],
+  {
+    files: ['**/*.svelte'],
+    rules: {
+      "svelte-tailwindcss/sort-classes": [
+        "error",
+        { callees: ["twMerge", "clsx"] },
+      ],
+    }
+  }
 )
   .override('antfu/stylistic/rules', {
     rules: {

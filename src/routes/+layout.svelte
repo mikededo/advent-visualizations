@@ -8,7 +8,7 @@
     {@render children()}
 </main>
 
-<footer class="mt-auto flex h-12 w-full items-center justify-center bg-gray-50">
+<footer class="mt-auto flex h-12 w-full items-center justify-center bg-gray-50 text-sm">
     <p>
         Designed and developed by
         <a
