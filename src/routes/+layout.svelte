@@ -9,5 +9,14 @@
 </main>
 
 <footer class="w-full bg-gray-50 h-12 mt-auto flex items-center justify-center">
-    <p>Designed and developed by <a href="https://github.com/mikededo">@mikededo</a></p>
+    <p>
+        Designed and developed by
+        <a
+            href="https://github.com/mikededo"
+            rel="external"
+            target="_blank"
+        >
+            @mikededo
+        </a>
+    </p>
 </footer>

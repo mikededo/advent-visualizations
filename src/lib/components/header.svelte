@@ -17,7 +17,10 @@
 
 <header>
     <nav>
-        <a class="flex text-sm items-center gap-2 mb-2 text-[var(--tw-prose-body)] no-underline" href="/">
+        <a
+            class="flex text-sm items-center gap-2 mb-2 text-[var(--tw-prose-body)] no-underline"
+            href="/"
+        >
             <MoveLeftIcon class="size-4" strokeWidth={2} />
             <span>Go back</span>
         </a>
@@ -25,7 +28,15 @@
     <h1>{title}</h1>
     <p>{@render description()}</p>
     <ul>
-        <li> Code for this solution: <a href={url}>{fileName}</a> </li>
+        <li>
+            Code for this solution:
+            <a href={url}
+                rel="external"
+                target="_blank"
+            >
+                {fileName}
+            </a>
+        </li>
         <li><a href={problemUrl}>Problem statement</a></li>
     </ul>
     {#if children}
