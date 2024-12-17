@@ -1,5 +1,6 @@
 import antfu from '@antfu/eslint-config';
 import perfectionist from 'eslint-plugin-perfectionist';
+import svelteTailwindcss from 'eslint-plugin-svelte-tailwindcss';
 
 export default antfu(
   {
@@ -82,7 +83,8 @@ export default antfu(
     rules: {
       'style/indent': ['error', 4]
     }
-  }
+  },
+  ...svelteTailwindcss.configs['flat/base']
 )
   .override('antfu/stylistic/rules', {
     rules: {

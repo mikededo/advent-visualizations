@@ -4,11 +4,11 @@
     const { children } = $props();
 </script>
 
-<main class="min-h-[calc(100vh-48px)] px-6 bg-white container lg:pt-16 lg:pb-28 py-8 flex flex-col relative lg:py-12">
+<main class="container relative flex min-h-[calc(100vh-48px)] flex-col bg-white px-6 py-8 lg:py-12 lg:pb-28 lg:pt-16">
     {@render children()}
 </main>
 
-<footer class="w-full bg-gray-50 h-12 mt-auto flex items-center justify-center">
+<footer class="mt-auto flex h-12 w-full items-center justify-center bg-gray-50">
     <p>
         Designed and developed by
         <a

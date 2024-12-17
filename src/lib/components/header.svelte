@@ -18,7 +18,7 @@
 <header>
     <nav>
         <a
-            class="flex text-sm items-center gap-2 mb-2 text-[var(--tw-prose-body)] no-underline"
+            class="mb-2 flex items-center gap-2 text-sm text-[var(--tw-prose-body)] no-underline"
             href="/"
         >
             <MoveLeftIcon class="size-4" strokeWidth={2} />
