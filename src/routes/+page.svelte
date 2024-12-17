@@ -1,10 +1,13 @@
+<svelte:head>
+    <title>AoC Visualizations - @mikededo</title>
+</svelte:head>
+
 <div class="container py-8">
-    <header class="mb-6">
+    <header>
         <h1>Advent of Code Visualizations</h1>
         <p>
             A collection of visualizations for Advent of Code problems, from some of the problems that I've solved. You can find the solutions in this
             <a
-                class="hover:underline italic text-blue-500"
                 href="https://github.com/mikededo/avent"
             >
                 repository
@@ -12,7 +15,11 @@
         </p>
     </header>
     <section>
-        <h2 class="mb-3">Years</h2>
-        <h3>2024</h3>
+        <h2>2024</h2>
+        <ul>
+            <li>
+                Implementation of a <em>&ldquo;flood fill&rdquo;</em> algorithm to dectect consequent areas: <a href="/2024/12">12th</a>
+            </li>
+        </ul>
     </section>
 </div>

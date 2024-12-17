@@ -2,6 +2,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-html {
-  color: #333;
+.prose {
+  --tw-prose-links: theme('colors.blue.500');
 }
