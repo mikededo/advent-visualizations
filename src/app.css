@@ -2,6 +2,12 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+* {
+  scrollbar-width: thin;
+  scrollbar-gutter: stable;
+  scrollbar-color: #374151 transparent;
+}
+
 .prose {
   --tw-prose-links: theme('colors.blue.500');
 }

@@ -26,7 +26,7 @@
         </a>
     </nav>
     <h1>{title}</h1>
-    <p>{@render description()}</p>
+    {@render description()}
     <ul>
         <li>
             Code for this solution:

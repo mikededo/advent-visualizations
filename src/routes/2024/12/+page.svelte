@@ -261,18 +261,18 @@ MLLLLLLLLLKKKJJJJJRLHHHHHHEDDDDDDDDDDMM`
 <Header
     fileName="d12.rs"
     problemUrl="https://adventofcode.com/2024/day/12"
-    title="Solution to 12th problem"
+    title="Solution to the 12th problem"
     url="https://github.com/mikededo/advent/blob/main/aoc-24/src/solutions/d12.rs"
 >
     {#snippet description()}
-        This problem is solved using a flood fill algorithm. The algorithm works by starting at a given point and then checking all the points around it
-        and checking if they are part of the same group. If they are, then they are added to the group and the algorithm continues. If they are not, then
-        they are added to a new group and the algorithm continues. This process continues until all the points are checked and added to a group.
+        <p>
+            This problem is solved using a flood fill algorithm. The algorithm works by starting at a given point and then checking all the points around it and checking if they are part of the same group. If they are, then they are added to the group and the algorithm continues. If they are not, then they are added to a new group and the algorithm continues. This process continues until all the points are checked and added to a group.
+        </p>
     {/snippet}
 </Header>
 
 <section>
-    <h2>Visualization</h2>
+    <h2 class="mt-4">Visualization</h2>
     <div class="flex w-full items-center justify-between gap-8 font-semibold">
         <p>Cost: <AnimatedNumber value={cost} /></p>
         <Button

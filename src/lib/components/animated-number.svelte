@@ -12,7 +12,7 @@
         format = value => Math.round(value),
         value = 0
     }: Props = $props();
-    const animatedValue = new Tween(value, { duration: 250, easing: quadInOut });
+    const animatedValue = new Tween(value, { duration: 100, easing: quadInOut });
 
     $effect(() => {
         animatedValue.set(value);
