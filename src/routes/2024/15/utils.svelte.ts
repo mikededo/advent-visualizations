@@ -68,7 +68,7 @@ export const runASolver = async (
   algorithmState.map[start[0]][start[1]] = '.';
   algorithmState.cancel = false;
 
-  const ms = 10_000 / movements.length;
+  const ms = 1000 / movements.length;
   let player = start;
   for (const mov of movements) {
     await sleep(ms);

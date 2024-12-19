@@ -174,7 +174,7 @@ You can also generate a set of random movements with the button below.`;
     url="https://github.com/mikededo/advent/blob/main/aoc-24/src/solutions/d15.rs"
 >
     {#snippet description()}
-        <SMWarning />
+        <SMWarning notImplemented />
         <p>
             The problem basically requires to execute a sequence of movements into a map. The map contains empty cells, boxes and walls. The movements are executed with following these rules:
         </p>
@@ -190,10 +190,10 @@ You can also generate a set of random movements with the button below.`;
     {/snippet}
 </Header>
 
-<section>
+<section class="hidden md:block">
     <h2 class="mt-4">Customize your input</h2>
     <div bind:this={container} class="flex w-full flex-col items-center gap-2 md:flex-row">
-        <div style="width: {mapWidth}%" class="flex flex-col gap-2">
+        <div style="--input-width: {mapWidth}%" class="input flex flex-col gap-2">
             <Textarea
                 placeholder={DEFAULT_MAP}
                 rows={10}
@@ -202,12 +202,12 @@ You can also generate a set of random movements with the button below.`;
             />
         </div>
         <div
-            class="h-10 w-1 shrink-0 cursor-ew-resize rounded-full bg-gray-200"
+            class="hidden h-10 w-1 shrink-0 cursor-ew-resize rounded-full bg-gray-200 md:block"
             use:useDraggable
         ></div>
         <div
-            style="width: {100 - mapWidth}%"
-            class="col-span-2 flex flex-col gap-2"
+            style="--input-width: {100 - mapWidth}%"
+            class="input col-span-2 flex flex-col gap-2"
             class:pointer-events-none={isDragging}
         >
             <Textarea
@@ -225,7 +225,7 @@ You can also generate a set of random movements with the button below.`;
     </p>
 </section>
 
-<section>
+<section class="hidden md:block">
     <header class="flex items-end justify-between">
         <h2 class="mb-0">Visualization</h2>
         <div class="flex items-center gap-1">
@@ -241,3 +241,13 @@ You can also generate a set of random movements with the button below.`;
 
     <div id={CONTAINER_ID}></div>
 </section>
+
+<style lang="postcss">
+.input {
+  width: 100%;
+
+  @media screen(md) {
+    width: var(--input-width);
+  }
+}
+</style>
